@@ -1,8 +1,9 @@
 package com.company;
 
 import com.company.controllers.EnemyController;
-import com.company.controllers.MedicineController;
-import com.company.entities.Medicine;
+import com.company.entities.Hero;
+//import com.company.controllers.MedicineController;
+//import com.company.entities.Medicine;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

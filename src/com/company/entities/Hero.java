@@ -7,8 +7,30 @@ public class Character {
     private double health_points;
     private double armor_points;
     private double damage;
+    private int life;
+
+    public Hero(){
+
+    }
+
+    public Hero(String name, String gender, int age, double health_points, double armor_points, double damage, int life) {
+        setName(name);
+        setGender(gender);
+        setAge(age);
+        setHealth_points(health_points);
+        setArmor_points(armor_points);
+        setDamage(damage);
+        setLife(life);
+    }
 
 
+    public int getLife() {
+        return life;
+    }
+
+    public void setLife(int life) {
+        this.life = life;
+    }
     public String getName() {
         return name;
     }
