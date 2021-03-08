@@ -1,6 +1,9 @@
 package com.company.entities;
 
-public class Character {
+import com.company.Options;
+
+public class Hero {
+
     private String name;
     private String gender;
     private int age;
@@ -77,5 +80,29 @@ public class Character {
 
     public void setDamage(double damage) {
         this.damage = damage;
+    }
+
+//    @Override
+//    public String toString() {
+//        return "Hero" + ":" +
+//                "Lives" + life +
+//                "health:'" + health_points + '\'' +
+//                "armor:'" + armor_points + '\'' +
+//                "damage:'" + damage + '\'' +
+//
+//                '}';
+//    }
+
+    @Override
+    public String toString() {
+        return "Hero{" +
+                "name='" + name + '\'' +
+                ", gender='" + gender + '\'' +
+                ", age=" + age +
+                ", health_points=" + health_points +
+                ", armor_points=" + armor_points +
+                ", damage=" + damage +
+                ", life=" + life +
+                '}';
     }
 }
