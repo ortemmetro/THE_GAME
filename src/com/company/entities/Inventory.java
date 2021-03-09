@@ -4,7 +4,7 @@ public class Inventory {
     private String food;
     private double coins;
     private String weapon;
-    private String poisons;
+    private String potions;
 
     public String getFood() {
         return food;
@@ -30,11 +30,11 @@ public class Inventory {
         this.weapon = weapon;
     }
 
-    public String getPoisons() {
-        return poisons;
+    public String getPotions() {
+        return potions;
     }
 
-    public void setPoisons(String poisons) {
-        this.poisons = poisons;
+    public void setPotions(String poisons) {
+        this.potions = potions;
     }
 }
