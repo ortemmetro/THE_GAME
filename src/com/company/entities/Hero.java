@@ -7,12 +7,16 @@ public class Hero {
     private String name;
     private String gender;
     private int age;
-    private double health_points;
-    private double armor_points;
-    private double damage;
+    private double health_points=100;
+    private double armor_points=5;
+    private double damage=15;
     private int life;
 
     public Hero(){
+
+    }
+
+    public Hero(int life){
 
     }
 
@@ -23,7 +27,7 @@ public class Hero {
         setHealth_points(health_points);
         setArmor_points(armor_points);
         setDamage(damage);
-        setLife(life);
+        setLife(2);
     }
 
 
@@ -93,16 +97,15 @@ public class Hero {
 //                '}';
 //    }
 
+
     @Override
     public String toString() {
-        return "Hero{" +
-                "name='" + name + '\'' +
-                ", gender='" + gender + '\'' +
-                ", age=" + age +
-                ", health_points=" + health_points +
-                ", armor_points=" + armor_points +
-                ", damage=" + damage +
-                ", life=" + life +
-                '}';
+        return "\t"+getName() + ":" +
+                "\n*******************************" +
+                "\n\t  Health: " + health_points +
+                "\n\t  Armor: " + armor_points +
+                "\n\t  Damage: " + damage +
+                "\n\t  Lives: " + getLife()
+                ;
     }
 }

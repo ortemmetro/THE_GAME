@@ -6,33 +6,7 @@ public class Enemy {
     private double armor_points;
     private double damage;
     private double critical_damage;
-    private String drop_weapon;
-    private String drop_potions;
-    private double drop_coins;
-
-    public String getDrop_weapon() {
-        return drop_weapon;
-    }
-
-    public void setDrop_weapon(String drop_weapon) {
-        this.drop_weapon = drop_weapon;
-    }
-
-    public String getDrop_potions() {
-        return drop_potions;
-    }
-
-    public void setDrop_potions(String drop_potions) {
-        this.drop_potions = drop_potions;
-    }
-
-    public double getDrop_coins() {
-        return drop_coins;
-    }
-
-    public void setDrop_coins(double drop_coins) {
-        this.drop_coins = drop_coins;
-    }
+    private String drop;
 
     public String getType() {
         return type;
@@ -40,6 +14,15 @@ public class Enemy {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public Enemy(String type, double health_points, double armor_points, double damage, double critical_damage, String drop) {
+        this.type = type;
+        this.health_points = health_points;
+        this.armor_points = armor_points;
+        this.damage = damage;
+        this.critical_damage = critical_damage;
+        this.drop = drop;
     }
 
     public double getHealth_points() {
@@ -72,5 +55,22 @@ public class Enemy {
 
     public void setCritical_damage(double critical_damage) {
         this.critical_damage = critical_damage;
+    }
+
+    public String getDrop() {
+        return drop;
+    }
+
+    public void setDrop(String drop) {
+        this.drop = drop;
+    }
+
+    @Override
+    public String toString() {
+        return "\t" + type + ":" +
+                "\n\t  Health: " + health_points +
+                "\n\t  Armor: " + armor_points +
+                "\n\t  Damage: " + damage
+                ;
     }
 }
